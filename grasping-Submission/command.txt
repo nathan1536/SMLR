@@ -1,0 +1,2 @@
+sudo docker run  --rm -it --name conda_container --gpus all -e DISPLAY -v $(pwd):/home/vtprl:rw -v $(pwd)/external/stable-baselines3:/home/repos/stable-baselines3:ro --privileged --net="host" conda_image:latest bash
+

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Configuration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <CommunicationType>GRPC</CommunicationType>
+  <PortNumber>9092</PortNumber>
+  <IPAddress>127.0.0.1</IPAddress>
+  <TimestepDurationInSeconds>0.05</TimestepDurationInSeconds>
+  <PhyscsSimulationIncrementInSeconds>0.025</PhyscsSimulationIncrementInSeconds>
+  <EnableObservationImage>true</EnableObservationImage>
+  <SaveObservationImageAsFile>false</SaveObservationImageAsFile>
+  <ObservationImageWidth>256</ObservationImageWidth>
+  <ObservationImageHeight>256</ObservationImageHeight>
+  <ObservationImageEncoding>PNG</ObservationImageEncoding>
+  <ObservationImageQuality>50</ObservationImageQuality>
+  <ObservationCameras>
+    <CameraParameters>
+      <CameraPosition>
+        <float updated="yes">0.0</float>
+        <float updated="yes">2.0</float>
+        <float updated="yes">2.0</float>
+      </CameraPosition>
+      <CameraRotation>
+        <float updated="yes">45.0</float>
+        <float updated="yes">180.0</float>
+        <float updated="yes">0.0</float>
+      </CameraRotation> 
+    </CameraParameters>
+  </ObservationCameras>
+  <EnableGrayscale>false</EnableGrayscale>
+  <ItemType>CUBE</ItemType>
+  <ItemSizeX>0.05</ItemSizeX>
+  <ItemSizeY>0.1</ItemSizeY>
+  <ItemSizeZ>0.05</ItemSizeZ>
+  <EnableEndEffector>true</EnableEndEffector>
+  <EndEffectorModel>ROBOTIQ_2F85</EndEffectorModel>
+  <!--<EndEffectorModel>ROBOTIQ_3F</EndEffectorModel>-->
+  <MaxJointVelocity>57.2957</MaxJointVelocity>
+  <RandomizeAppearance>false</RandomizeAppearance>
+  <CameraPositionRandomizationRangeInMeters>0.05</CameraPositionRandomizationRangeInMeters>
+  <CameraRotationRandomizationRangeInDegrees>3.0</CameraRotationRandomizationRangeInDegrees> 
+  <EnableShadows>false</EnableShadows>
+  <ShadowType>Soft</ShadowType>  
+  <RandomizeLatency>false</RandomizeLatency>
+  <RandomizeTorque>false</RandomizeTorque>
+  <FloorType>MONOCHROMATIC</FloorType>
+  <TrajectoryString></TrajectoryString>
+</Configuration>
